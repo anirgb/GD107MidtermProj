@@ -1,2 +1,2 @@
 # GD107Midterm
-Creative Journey
+Alexander the Great
