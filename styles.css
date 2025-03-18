@@ -1,0 +1,203 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #65350F;
+    --secondary-color: #D2B48C;
+    --accent-color: #38466E;
+    --text-color: #212121;
+    --background-color: #ECEFF1;
+}
+
+/* Body & Header */
+body {
+    background-color: var(--background-color);
+    text-align: center;
+    line-height: 1.6;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 40px 20px;
+}
+
+/* Navigation */
+nav {
+    background: var(--secondary-color);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-buttons button {
+    background: var(--accent-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.nav-buttons button:hover {
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    background: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Images */
+img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+
+/* Centered Content Box */
+#journeyBox {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Paragraphs Centered */
+section p {
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* Button Accessibility */
+button {
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+
+button:hover, button:focus {
+    transform: scale(1.1);
+    background-color: var(--accent-color);
+}
+/* Interactive Animations */
+.fade-in {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+
+/* Button Click Effect */
+.clicked {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}
+
+
+/* Smooth Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+
+/* Add this to your styles.css file */
+#scrollUpBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #262c88; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+
+#scrollUpBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
